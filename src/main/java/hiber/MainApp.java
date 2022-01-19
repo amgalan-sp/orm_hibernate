@@ -48,19 +48,22 @@ public class MainApp {
       userService.add(user3);
       userService.add(user4);
 
+      userService.addCar(car1);
+      userService.addCar(car2);
+      userService.addCar(car3);
+      userService.addCar(car4);
 //      List<User> users = userService.listUsers();
 
 //      for (User user : users) {
 //         System.out.println(user.toString());
 //      }
 
-      for (Car i : list_of_cars) {
-         System.out.println(i.getUser());
-      }
-//      List<User> user = userService.getUser("BMW", 2);
-//      for (User users : user) {
-//         System.out.println(users.toString());
+//      for (Car i : list_of_cars) {
+//         System.out.println(i.getUser());
 //      }
+      User users = userService.getUser("BMW", 2);
+      System.out.println(users.toString());
+
 
       context.close();
    }
