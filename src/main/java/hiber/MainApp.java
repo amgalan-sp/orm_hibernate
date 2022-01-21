@@ -61,7 +61,7 @@ public class MainApp {
       for (Car i : list_of_cars) {
          System.out.println(i.getUser());
       }
-      User user = userService.getUser("BMW", 4);
+      User user = userService.getUser("BMW", 2);
       System.out.println(user.toString());
       context.close();
    }
